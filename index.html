@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="display-flex">
+            <div class="width40">
+                <button id="bold1" class="bold" onclick="bold('text1')">Bold</button>
+                <button id="italic1" class="italic" onclick="italic('text1')">Italic</button>
+                <button id="underline1" class="underline" onclick="underline('text1')">Underline</button>
+                <input type="number" placeholder="font-size" id="fontsize1" class="height" oninput="fontheight(this,'text1')"/>
+                <input type="color" id="colorpicker1" class="color" oninput="fontcolor(this,'text1')">
+            </div>
+            <div class="width40">
+                <p id="text1">He's not the sharpest knife in the drawer.</p>
+            </div>
+            <div class="width40">
+                <button id="bold2" class="bold" onclick="bold('text2')">Bold</button>
+                <button id="italic2" class="italic" onclick="italic('text2')">Italic</button>
+                <button id="underline2" class="underline" onclick="underline('text2')">Underline</button>
+                <input type="number" min="8px" placeholder="font-size" id="fontsize2" class="height" oninput="fontheight(this,'text2')"/>
+                <input type="color" id="colorpicker2" class="color" oninput="fontcolor(this,'text2')">
+            </div>
+            <div class="width40">
+                <p id="text2">The big building was blazing with lights.</p>
+            </div>
+            <div class="width40">
+                <button id="bold3" class="bold" onclick="bold('text3')">Bold</button>
+                <button id="italic3" class="italic" onclick="italic('text3')">Italic</button>
+                <button id="underline3" class="underline" onclick="underline('text3')">Underline</button>
+                <input type="number" min="8px" placeholder="font-size" id="fontsize3" class="height" oninput="fontheight(this,'text3')"/>
+                <input type="color" id="colorpicker3" class="color" oninput="fontcolor(this,'text3')">
+            </div>
+            <div class="width40">
+                <p id="text3">Now you must answer some big questions.</p>
+            </div>
+            <div class="width40">
+                <button id="bold4" class="bold" onclick="bold('text4')">Bold</button>
+                <button id="italic4" class="italic" onclick="italic('text4')">Italic</button>
+                <button id="underline4" class="underline" onclick="underline('text4')">Underline</button>
+                <input type="number" min="8px" placeholder="font-size" oninput="fontheight(this,'text4')" id="fontsize4" class="height"/>
+                <input type="color" id="colorpicker4" class="color" oninput="fontcolor(this,'text4')">
+            </div>
+            <div class="width40">
+                <p id="text4">Get Your Act Together!</p>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
